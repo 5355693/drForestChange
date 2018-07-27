@@ -1,0 +1,433 @@
+"","landCoverCode","sqKmLost","year","landCoverName","landCoverNameSp","landCoverCategory","sqKmBurned","sqKmLossNonFire"
+"1","1",5.95584729436709,2001,"Dense conifer forest","Bosque conifero denso","Forest",2.45741991265487,3.49842738171222
+"2","2",2.33707870281953,2001,"Open conifer forest","Bosque conifero abierto","Forest",1.06006368578336,1.27701501703617
+"3","4",1.96661055653844,2001,"Wet broadleaf forest","Bosque latifoliado nublado","Forest",0.633099413519646,1.33351114301879
+"4","6",8.08404222649041,2001,"Moist broadleaf forest","Bosque latifoliado humedo","Forest",0.0593482022705078,8.0246940242199
+"5","8",7.26802317639615,2001,"Semi-moist broadleaf forest","Bosque latifoliado semi-humedo","Forest",0.0321822660522461,7.2358409103439
+"6","9",10.0873074468153,2001,"Dry forest","Bosque seco","Forest",0.0236571199951172,10.0636503268202
+"7","12",0.0837001858856201,2001,"Temporarily flooded forested brackish wetlands","Bosque humedales salobres temporalmente inundado","Wetland",0,0.0837001858856201
+"8","13",0.0284286383361816,2001,"Permanently flooded forested brackish wetlands","Bosque humedales salobres permanentemente inundado","Wetland",0,0.0284286383361816
+"9","14",0.0360175674743652,2001,"Forested freshwater wetlands","Bosque humedales de agua dulce","Wetland",0,0.0360175674743652
+"10","16",7.4393451053984,2001,"Broadleaf matorral","Matorral latifoliado","Shrubland",0.107286105311016,7.33205900008738
+"11","20",3.38867136356117,2001,"Dry matorral","Matorral seco","Shrubland",0,3.38867136356117
+"12","21",0.00271544949279785,2001,"Brackish wetland matorral","Matorral de humedales salobres","Shrubland",0,0.00271544949279785
+"13","24",0,2001,"Grassy brackish wetlands","Sabana de humedales salobres","Wetland",0,0
+"14","26",0.00319862657775879,2001,"Grassy freshwater marsh","Sabana humedales de agua aulce","Wetland",0,0.00319862657775879
+"15","27",0.28025733445772,2001,"Sabana de pajon","Sabana de pajon","Grassland",0.284273751457663,-0.00401641699994304
+"16","33",0.00491002830993652,2001,"Cattail marsh","Eneal","Wetland",0,0.00491002830993652
+"17","35",0.347379425075073,2001,"Unvegetated or eroded areas","Escasa vegetación o area erosionada","Unvegetated",0.0143971698608398,0.332982255214233
+"18","37",4.1575834955836,2001,"Cultivated land","Cultivos intensivos","Cultivated",0.0533526615600586,4.10423083402354
+"19","38",3.88632914345388,2001,"Sugar cane","Caña","Cultivated",0.00169777691650391,3.88463136653738
+"20","39",3.58950762560187,2001,"Rice","Arroz","Cultivated",0,3.58950762560187
+"21","40",4.00114063018822,2001,"Pasture","Pasto","Cultivated",0.005938884765625,3.99520174542259
+"22","51",1.24178459529785,2001,"African palm","Palma Africana","Cultivated",0,1.24178459529785
+"23","52",0.627198421806641,2001,"Coco Palm","Palma de Coco","Cultivated",0,0.627198421806641
+"24","53",7.38357714631859,2001,"Coffee and Cacao","Café y Cacao","Cultivated",0.0364670521850586,7.34711009413353
+"25","59",23.8736224421187,2001,"Subsistence agriculture or pasture","Agricultura de Subsistencia y Pasto","Cultivated",0.443734208679199,23.4298882334395
+"26","65",0.0127890039300537,2001,"Lake","Lagunos o lagos","Unvegetated",0,0.0127890039300537
+"27","72",0.0772397402197266,2001,"Populated areas","Areas pobladas","Unvegetated",0,0.0772397402197266
+"28","1",2.87949405164539,2002,"Dense conifer forest","Bosque conifero denso","Forest",0.0245305733642578,2.85496347828113
+"29","2",1.32879350345535,2002,"Open conifer forest","Bosque conifero abierto","Forest",0.0693623672485351,1.25943113620681
+"30","4",1.18289977083326,2002,"Wet broadleaf forest","Bosque latifoliado nublado","Forest",0.113338380371094,1.06956139046217
+"31","6",7.13605402579818,2002,"Moist broadleaf forest","Bosque latifoliado humedo","Forest",0.00764627862548828,7.12840774717269
+"32","8",6.82690259011268,2002,"Semi-moist broadleaf forest","Bosque latifoliado semi-humedo","Forest",0.00935977862548828,6.81754281148719
+"33","9",11.4360504901969,2002,"Dry forest","Bosque seco","Forest",0.44810099810791,10.987949492089
+"34","12",0.01304397515625,2002,"Temporarily flooded forested brackish wetlands","Bosque humedales salobres temporalmente inundado","Wetland",0,0.01304397515625
+"35","13",0.0724993170593262,2002,"Permanently flooded forested brackish wetlands","Bosque humedales salobres permanentemente inundado","Wetland",0,0.0724993170593262
+"36","14",0.0341044781152344,2002,"Forested freshwater wetlands","Bosque humedales de agua dulce","Wetland",0,0.0341044781152344
+"37","16",8.4311301644836,2002,"Broadleaf matorral","Matorral latifoliado","Shrubland",0.000849020080566406,8.43028114440303
+"38","20",4.60887068062273,2002,"Dry matorral","Matorral seco","Shrubland",0.068153247253418,4.54071743336931
+"39","21",0.0318367554602051,2002,"Brackish wetland matorral","Matorral de humedales salobres","Shrubland",0,0.0318367554602051
+"40","24",0.00102393043823242,2002,"Grassy brackish wetlands","Sabana de humedales salobres","Wetland",0,0.00102393043823242
+"41","26",0.0131187396966553,2002,"Grassy freshwater marsh","Sabana humedales de agua aulce","Wetland",0,0.0131187396966553
+"42","27",0.0356478637426758,2002,"Sabana de pajon","Sabana de pajon","Grassland",0,0.0356478637426758
+"43","33",0.0168666092315674,2002,"Cattail marsh","Eneal","Wetland",0,0.0168666092315674
+"44","35",0.489606198950629,2002,"Unvegetated or eroded areas","Escasa vegetación o area erosionada","Unvegetated",0.00511159283447266,0.484494606116156
+"45","37",5.23317613575863,2002,"Cultivated land","Cultivos intensivos","Cultivated",0.000851850769042969,5.23232428498959
+"46","38",2.84545777754333,2002,"Sugar cane","Caña","Cultivated",0.00168560925292969,2.8437721682904
+"47","39",1.99258472179512,2002,"Rice","Arroz","Cultivated",0,1.99258472179512
+"48","40",3.86339534713358,2002,"Pasture","Pasto","Cultivated",0,3.86339534713358
+"49","51",0.876516600094602,2002,"African palm","Palma Africana","Cultivated",0,0.876516600094602
+"50","52",0.697936486039378,2002,"Coco Palm","Palma de Coco","Cultivated",0,0.697936486039378
+"51","53",7.31313397186898,2002,"Coffee and Cacao","Café y Cacao","Cultivated",0,7.31313397186898
+"52","59",20.874360945937,2002,"Subsistence agriculture or pasture","Agricultura de Subsistencia y Pasto","Cultivated",0.103525438781738,20.7708355071553
+"53","65",0.0457767211816406,2002,"Lake","Lagunos o lagos","Unvegetated",0,0.0457767211816406
+"54","72",0.116456336747436,2002,"Populated areas","Areas pobladas","Unvegetated",0,0.116456336747436
+"55","1",3.96760606060216,2003,"Dense conifer forest","Bosque conifero denso","Forest",0.149275756408691,3.81833030419347
+"56","2",1.92030145103933,2003,"Open conifer forest","Bosque conifero abierto","Forest",0.564324638298723,1.35597681274061
+"57","4",1.85975146422869,2003,"Wet broadleaf forest","Bosque latifoliado nublado","Forest",0.178788777996467,1.68096268623222
+"58","6",7.96549789273971,2003,"Moist broadleaf forest","Bosque latifoliado humedo","Forest",0.152298702270508,7.8131991904692
+"59","8",5.96717085057873,2003,"Semi-moist broadleaf forest","Bosque latifoliado semi-humedo","Forest",0.0406678218383789,5.92650302874035
+"60","9",6.5639193316839,2003,"Dry forest","Bosque seco","Forest",0.00169494079589844,6.562224390888
+"61","12",0.147755986170044,2003,"Temporarily flooded forested brackish wetlands","Bosque humedales salobres temporalmente inundado","Wetland",0,0.147755986170044
+"62","13",0.0255664066821289,2003,"Permanently flooded forested brackish wetlands","Bosque humedales salobres permanentemente inundado","Wetland",0,0.0255664066821289
+"63","14",0.0351802737030029,2003,"Forested freshwater wetlands","Bosque humedales de agua dulce","Wetland",0,0.0351802737030029
+"64","16",11.2624006299219,2003,"Broadleaf matorral","Matorral latifoliado","Shrubland",0.305494765991211,10.9569058639307
+"65","20",3.15161301117184,2003,"Dry matorral","Matorral seco","Shrubland",0.0008474716796875,3.15076553949215
+"66","21",0.0153832343908691,2003,"Brackish wetland matorral","Matorral de humedales salobres","Shrubland",0,0.0153832343908691
+"67","24",0,2003,"Grassy brackish wetlands","Sabana de humedales salobres","Wetland",0,0
+"68","26",0.0173639184490967,2003,"Grassy freshwater marsh","Sabana humedales de agua aulce","Wetland",0,0.0173639184490967
+"69","27",0.037788581696167,2003,"Sabana de pajon","Sabana de pajon","Grassland",0.00509851452636719,0.0326900671697998
+"70","33",0.00746388754272461,2003,"Cattail marsh","Eneal","Wetland",0,0.00746388754272461
+"71","35",0.506850585144247,2003,"Unvegetated or eroded areas","Escasa vegetación o area erosionada","Unvegetated",0.000849265930175781,0.506001319214071
+"72","37",3.64105406322412,2003,"Cultivated land","Cultivos intensivos","Cultivated",0.00931716998291016,3.63173689324121
+"73","38",4.8812055823579,2003,"Sugar cane","Caña","Cultivated",0.117092986450195,4.7641125959077
+"74","39",1.74521733486717,2003,"Rice","Arroz","Cultivated",0,1.74521733486717
+"75","40",5.9531198250194,2003,"Pasture","Pasto","Cultivated",0.00594223229980469,5.9471775927196
+"76","51",0.327544539195557,2003,"African palm","Palma Africana","Cultivated",0,0.327544539195557
+"77","52",1.14520971408813,2003,"Coco Palm","Palma de Coco","Cultivated",0,1.14520971408813
+"78","53",9.5800783874602,2003,"Coffee and Cacao","Café y Cacao","Cultivated",0.0304706872558594,9.54960770020434
+"79","59",21.5632496338419,2003,"Subsistence agriculture or pasture","Agricultura de Subsistencia y Pasto","Cultivated",0.451244842285156,21.1120047915567
+"80","65",0.10586049656351,2003,"Lake","Lagunos o lagos","Unvegetated",0,0.10586049656351
+"81","72",0.105625964367676,2003,"Populated areas","Areas pobladas","Unvegetated",0,0.105625964367676
+"82","1",11.8032497058429,2004,"Dense conifer forest","Bosque conifero denso","Forest",0.33096472489277,11.4722849809501
+"83","2",4.10644199720573,2004,"Open conifer forest","Bosque conifero abierto","Forest",0.438104793076219,3.66833720412951
+"84","4",3.63988562003186,2004,"Wet broadleaf forest","Bosque latifoliado nublado","Forest",0.177106779644656,3.4627788403872
+"85","6",15.5520453495861,2004,"Moist broadleaf forest","Bosque latifoliado humedo","Forest",0.00339430426025391,15.5486510453258
+"86","8",13.628965522574,2004,"Semi-moist broadleaf forest","Bosque latifoliado semi-humedo","Forest",0.0177731258544922,13.6111923967195
+"87","9",17.9634083337695,2004,"Dry forest","Bosque seco","Forest",0.0076535859375,17.955754747832
+"88","12",0.0398253107189941,2004,"Temporarily flooded forested brackish wetlands","Bosque humedales salobres temporalmente inundado","Wetland",0,0.0398253107189941
+"89","13",0.162992197104492,2004,"Permanently flooded forested brackish wetlands","Bosque humedales salobres permanentemente inundado","Wetland",0,0.162992197104492
+"90","14",0.0766870866766357,2004,"Forested freshwater wetlands","Bosque humedales de agua dulce","Wetland",0,0.0766870866766357
+"91","16",14.7941952330302,2004,"Broadleaf matorral","Matorral latifoliado","Shrubland",0.00339484387207031,14.7908003891581
+"92","20",7.68623506229121,2004,"Dry matorral","Matorral seco","Shrubland",0.0008503916015625,7.68538467068965
+"93","21",0.0368447513763428,2004,"Brackish wetland matorral","Matorral de humedales salobres","Shrubland",0,0.0368447513763428
+"94","24",0.000603322803344726,2004,"Grassy brackish wetlands","Sabana de humedales salobres","Wetland",0,0.000603322803344726
+"95","26",0.0288502529272461,2004,"Grassy freshwater marsh","Sabana humedales de agua aulce","Wetland",0,0.0288502529272461
+"96","27",0.174476452150879,2004,"Sabana de pajon","Sabana de pajon","Grassland",0.0101566268920898,0.164319825258789
+"97","33",0.0206715490472412,2004,"Cattail marsh","Eneal","Wetland",0,0.0206715490472412
+"98","35",0.567377659200748,2004,"Unvegetated or eroded areas","Escasa vegetación o area erosionada","Unvegetated",0,0.567377659200748
+"99","37",8.55641777513657,2004,"Cultivated land","Cultivos intensivos","Cultivated",0,8.55641777513657
+"100","38",3.94359128178099,2004,"Sugar cane","Caña","Cultivated",0.0313682305908203,3.91222305119017
+"101","39",4.86518971165289,2004,"Rice","Arroz","Cultivated",0,4.86518971165289
+"102","40",5.85672634298809,2004,"Pasture","Pasto","Cultivated",0,5.85672634298809
+"103","51",0.967151127696533,2004,"African palm","Palma Africana","Cultivated",0,0.967151127696533
+"104","52",2.15705685275452,2004,"Coco Palm","Palma de Coco","Cultivated",0,2.15705685275452
+"105","53",14.6390293519616,2004,"Coffee and Cacao","Café y Cacao","Cultivated",0,14.6390293519616
+"106","59",37.6779850857739,2004,"Subsistence agriculture or pasture","Agricultura de Subsistencia y Pasto","Cultivated",0.330985096435547,37.3469999893384
+"107","65",0.0516057408846507,2004,"Lake","Lagunos o lagos","Unvegetated",0,0.0516057408846507
+"108","72",0.12898468074707,2004,"Populated areas","Areas pobladas","Unvegetated",0,0.12898468074707
+"109","1",56.0889247237851,2005,"Dense conifer forest","Bosque conifero denso","Forest",47.4600045861676,8.62892013761746
+"110","2",15.58759157341,2005,"Open conifer forest","Bosque conifero abierto","Forest",13.9095926252476,1.67799894816244
+"111","4",8.5443670721027,2005,"Wet broadleaf forest","Bosque latifoliado nublado","Forest",4.74569709820557,3.79866997389713
+"112","6",18.530456973946,2005,"Moist broadleaf forest","Bosque latifoliado humedo","Forest",3.53384751329919,14.9966094606468
+"113","8",13.685807701622,2005,"Semi-moist broadleaf forest","Bosque latifoliado semi-humedo","Forest",0.106752446289062,13.5790552553329
+"114","9",12.3858926789764,2005,"Dry forest","Bosque seco","Forest",0.0101617841796875,12.3757308947967
+"115","12",0.0785249934796143,2005,"Temporarily flooded forested brackish wetlands","Bosque humedales salobres temporalmente inundado","Wetland",0,0.0785249934796143
+"116","13",0.141963082827572,2005,"Permanently flooded forested brackish wetlands","Bosque humedales salobres permanentemente inundado","Wetland",0.0101538133544922,0.13180926947308
+"117","14",0.0317788757537842,2005,"Forested freshwater wetlands","Bosque humedales de agua dulce","Wetland",0,0.0317788757537842
+"118","16",19.3971220687129,2005,"Broadleaf matorral","Matorral latifoliado","Shrubland",0.710650231811523,18.6864718369014
+"119","20",5.37685167250813,2005,"Dry matorral","Matorral seco","Shrubland",0.00675393481445313,5.37009773769368
+"120","21",0.0189512942022705,2005,"Brackish wetland matorral","Matorral de humedales salobres","Shrubland",0,0.0189512942022705
+"121","24",0.00246606902709961,2005,"Grassy brackish wetlands","Sabana de humedales salobres","Wetland",0,0.00246606902709961
+"122","26",0.017024001463623,2005,"Grassy freshwater marsh","Sabana humedales de agua aulce","Wetland",0,0.017024001463623
+"123","27",0.357099384313082,2005,"Sabana de pajon","Sabana de pajon","Grassland",0.261369523994715,0.0957298603183669
+"124","33",0.0622234426409912,2005,"Cattail marsh","Eneal","Wetland",0,0.0622234426409912
+"125","35",0.527189724986546,2005,"Unvegetated or eroded areas","Escasa vegetación o area erosionada","Unvegetated",0.00253137884521484,0.524658346141331
+"126","37",5.42112893405423,2005,"Cultivated land","Cultivos intensivos","Cultivated",0.0135546640014648,5.40757427005277
+"127","38",4.46108796252908,2005,"Sugar cane","Caña","Cultivated",0.144177494873047,4.31691046765603
+"128","39",1.57187996664917,2005,"Rice","Arroz","Cultivated",0,1.57187996664917
+"129","40",8.7213559659542,2005,"Pasture","Pasto","Cultivated",0.00339470788574219,8.71796125806846
+"130","51",0.424750325262451,2005,"African palm","Palma Africana","Cultivated",0,0.424750325262451
+"131","52",1.67250447243099,2005,"Coco Palm","Palma de Coco","Cultivated",0.00507678918457031,1.66742768324642
+"132","53",13.8991300824331,2005,"Coffee and Cacao","Café y Cacao","Cultivated",0.165537492160453,13.7335925902726
+"133","59",36.1558589987162,2005,"Subsistence agriculture or pasture","Agricultura de Subsistencia y Pasto","Cultivated",1.59675926448999,34.5590997342262
+"134","65",0.0516078036422574,2005,"Lake","Lagunos o lagos","Unvegetated",0,0.0516078036422574
+"135","72",0.0443377254956055,2005,"Populated areas","Areas pobladas","Unvegetated",0,0.0443377254956055
+"136","1",3.7252146508363,2006,"Dense conifer forest","Bosque conifero denso","Forest",0.0398013461914063,3.68541330464489
+"137","2",2.57765508598969,2006,"Open conifer forest","Bosque conifero abierto","Forest",0.0254060156860352,2.55224907030366
+"138","4",1.60957198126707,2006,"Wet broadleaf forest","Bosque latifoliado nublado","Forest",0.000847080261230469,1.60872490100584
+"139","6",9.52448830659691,2006,"Moist broadleaf forest","Bosque latifoliado humedo","Forest",0.00338802355957031,9.52110028303734
+"140","8",11.498620856724,2006,"Semi-moist broadleaf forest","Bosque latifoliado semi-humedo","Forest",0.00338267163085938,11.4952381850931
+"141","9",14.134110079381,2006,"Dry forest","Bosque seco","Forest",0.0194857867431641,14.1146242926378
+"142","12",0.0511899217327881,2006,"Temporarily flooded forested brackish wetlands","Bosque humedales salobres temporalmente inundado","Wetland",0,0.0511899217327881
+"143","13",0.0502998890200866,2006,"Permanently flooded forested brackish wetlands","Bosque humedales salobres permanentemente inundado","Wetland",0,0.0502998890200866
+"144","14",0.0276985665026855,2006,"Forested freshwater wetlands","Bosque humedales de agua dulce","Wetland",0,0.0276985665026855
+"145","16",10.50604040265,2006,"Broadleaf matorral","Matorral latifoliado","Shrubland",0.00084780615234375,10.5051925964977
+"146","20",7.55405623567916,2006,"Dry matorral","Matorral seco","Shrubland",0.0484153395996094,7.50564089607955
+"147","21",0.0130396234588623,2006,"Brackish wetland matorral","Matorral de humedales salobres","Shrubland",0,0.0130396234588623
+"148","24",0.00107068803771973,2006,"Grassy brackish wetlands","Sabana de humedales salobres","Wetland",0,0.00107068803771973
+"149","26",0.0225332814685059,2006,"Grassy freshwater marsh","Sabana humedales de agua aulce","Wetland",0,0.0225332814685059
+"150","27",0.0579985340454102,2006,"Sabana de pajon","Sabana de pajon","Grassland",0.00846706823730469,0.0495314658081055
+"151","33",0.0492942378045654,2006,"Cattail marsh","Eneal","Wetland",0,0.0492942378045654
+"152","35",0.543111068401058,2006,"Unvegetated or eroded areas","Escasa vegetación o area erosionada","Unvegetated",0.00169928759765625,0.541411780803402
+"153","37",5.15865137852947,2006,"Cultivated land","Cultivos intensivos","Cultivated",0,5.15865137852947
+"154","38",2.37090562182797,2006,"Sugar cane","Caña","Cultivated",0.0195183635253906,2.35138725830258
+"155","39",1.81115255475773,2006,"Rice","Arroz","Cultivated",0.00676295843505859,1.80438959632267
+"156","40",5.5865929355807,2006,"Pasture","Pasto","Cultivated",0,5.5865929355807
+"157","51",0.299624989662475,2006,"African palm","Palma Africana","Cultivated",0,0.299624989662475
+"158","52",1.06576866761169,2006,"Coco Palm","Palma de Coco","Cultivated",0,1.06576866761169
+"159","53",9.3367729733485,2006,"Coffee and Cacao","Café y Cacao","Cultivated",0.00169413922119141,9.33507883412731
+"160","59",26.3339406943095,2006,"Subsistence agriculture or pasture","Agricultura de Subsistencia y Pasto","Cultivated",0.0889021689453125,26.2450385253642
+"161","65",0.025833974475708,2006,"Lake","Lagunos o lagos","Unvegetated",0.000848438720703125,0.0249855357550049
+"162","72",0.0578978014870677,2006,"Populated areas","Areas pobladas","Unvegetated",0,0.0578978014870677
+"163","1",6.91031878005619,2007,"Dense conifer forest","Bosque conifero denso","Forest",0.65542407611084,6.25489470394535
+"164","2",3.31867055279236,2007,"Open conifer forest","Bosque conifero abierto","Forest",0.926564503967285,2.39210604882507
+"165","4",2.74960156098355,2007,"Wet broadleaf forest","Bosque latifoliado nublado","Forest",0.132948852661133,2.61665270832242
+"166","6",11.4646426457167,2007,"Moist broadleaf forest","Bosque latifoliado humedo","Forest",0.0610243767700195,11.4036182689467
+"167","8",13.9644894320507,2007,"Semi-moist broadleaf forest","Bosque latifoliado semi-humedo","Forest",0.0449400164184571,13.9195494156322
+"168","9",14.9390006782988,2007,"Dry forest","Bosque seco","Forest",0.0691460825195312,14.8698545957793
+"169","12",0.0618610451818848,2007,"Temporarily flooded forested brackish wetlands","Bosque humedales salobres temporalmente inundado","Wetland",0,0.0618610451818848
+"170","13",0.06296090644104,2007,"Permanently flooded forested brackish wetlands","Bosque humedales salobres permanentemente inundado","Wetland",0,0.06296090644104
+"171","14",0.0411060047076416,2007,"Forested freshwater wetlands","Bosque humedales de agua dulce","Wetland",0,0.0411060047076416
+"172","16",13.8198293984363,2007,"Broadleaf matorral","Matorral latifoliado","Shrubland",0.0879038137580423,13.7319255846783
+"173","20",6.0433733505772,2007,"Dry matorral","Matorral seco","Shrubland",0.0261312112426758,6.01724213933452
+"174","21",0.011410922947998,2007,"Brackish wetland matorral","Matorral de humedales salobres","Shrubland",0.00169853442382812,0.00971238852416987
+"175","24",0.00105352418334961,2007,"Grassy brackish wetlands","Sabana de humedales salobres","Wetland",0,0.00105352418334961
+"176","26",0.0153913666235352,2007,"Grassy freshwater marsh","Sabana humedales de agua aulce","Wetland",0,0.0153913666235352
+"177","27",0.0515746922133502,2007,"Sabana de pajon","Sabana de pajon","Grassland",0,0.0515746922133502
+"178","33",0.153429779345703,2007,"Cattail marsh","Eneal","Wetland",0,0.153429779345703
+"179","35",0.44208040136866,2007,"Unvegetated or eroded areas","Escasa vegetación o area erosionada","Unvegetated",0.00339777105712891,0.438682630311531
+"180","37",9.42750496161668,2007,"Cultivated land","Cultivos intensivos","Cultivated",0.00337188262939453,9.42413307898729
+"181","38",2.81908726929278,2007,"Sugar cane","Caña","Cultivated",0.124727045959473,2.69436022333331
+"182","39",1.7657621843883,2007,"Rice","Arroz","Cultivated",0.00674613842773438,1.75901604596057
+"183","40",6.47546950663228,2007,"Pasture","Pasto","Cultivated",0.00169804791259766,6.47377145871968
+"184","51",1.2453866271521,2007,"African palm","Palma Africana","Cultivated",0,1.2453866271521
+"185","52",1.15958834345581,2007,"Coco Palm","Palma de Coco","Cultivated",0,1.15958834345581
+"186","53",12.8233459149127,2007,"Coffee and Cacao","Café y Cacao","Cultivated",0.00762079864501953,12.8157251162677
+"187","59",29.0451201994325,2007,"Subsistence agriculture or pasture","Agricultura de Subsistencia y Pasto","Cultivated",0.184664630021159,28.8604555694113
+"188","65",0.0675503810593932,2007,"Lake","Lagunos o lagos","Unvegetated",0,0.0675503810593932
+"189","72",0.0902601744403076,2007,"Populated areas","Areas pobladas","Unvegetated",0,0.0902601744403076
+"190","1",8.77431470966129,2008,"Dense conifer forest","Bosque conifero denso","Forest",0.328683151062012,8.44563155859928
+"191","2",3.78084249589956,2008,"Open conifer forest","Bosque conifero abierto","Forest",0.285495958679199,3.49534653722036
+"192","4",4.45555275782696,2008,"Wet broadleaf forest","Bosque latifoliado nublado","Forest",0.340928929224351,4.11462382860261
+"193","6",17.8661655442097,2008,"Moist broadleaf forest","Bosque latifoliado humedo","Forest",0.174696091003418,17.6914694532063
+"194","8",18.8814886807291,2008,"Semi-moist broadleaf forest","Bosque latifoliado semi-humedo","Forest",0.312005805725098,18.569482875004
+"195","9",20.1544571871197,2008,"Dry forest","Bosque seco","Forest",0.0653850784912109,20.0890721086285
+"196","12",0.100417819229126,2008,"Temporarily flooded forested brackish wetlands","Bosque humedales salobres temporalmente inundado","Wetland",0,0.100417819229126
+"197","13",0.0772365382015237,2008,"Permanently flooded forested brackish wetlands","Bosque humedales salobres permanentemente inundado","Wetland",0,0.0772365382015237
+"198","14",0.0683745511425781,2008,"Forested freshwater wetlands","Bosque humedales de agua dulce","Wetland",0,0.0683745511425781
+"199","16",20.6913495830481,2008,"Broadleaf matorral","Matorral latifoliado","Shrubland",0.0984814335327148,20.5928681495154
+"200","20",8.61640358257393,2008,"Dry matorral","Matorral seco","Shrubland",0.0331322509765625,8.58327133159737
+"201","21",0.0276129622351074,2008,"Brackish wetland matorral","Matorral de humedales salobres","Shrubland",0,0.0276129622351074
+"202","24",0.000794357315673828,2008,"Grassy brackish wetlands","Sabana de humedales salobres","Wetland",0,0.000794357315673828
+"203","26",0.0289577105145264,2008,"Grassy freshwater marsh","Sabana humedales de agua aulce","Wetland",0,0.0289577105145264
+"204","27",0.196943894083252,2008,"Sabana de pajon","Sabana de pajon","Grassland",0.037268763671875,0.159675130411377
+"205","33",0.192739264692383,2008,"Cattail marsh","Eneal","Wetland",0,0.192739264692383
+"206","35",0.574797497398455,2008,"Unvegetated or eroded areas","Escasa vegetación o area erosionada","Unvegetated",0.00254059252929687,0.572256904869158
+"207","37",7.32154754811344,2008,"Cultivated land","Cultivos intensivos","Cultivated",0.0288050575561523,7.29274249055729
+"208","38",3.28662927885524,2008,"Sugar cane","Caña","Cultivated",0.0212180331420898,3.26541124571315
+"209","39",2.79392820702834,2008,"Rice","Arroz","Cultivated",0,2.79392820702834
+"210","40",10.5695636431754,2008,"Pasture","Pasto","Cultivated",0,10.5695636431754
+"211","51",1.32927018736084,2008,"African palm","Palma Africana","Cultivated",0,1.32927018736084
+"212","52",2.31591637873144,2008,"Coco Palm","Palma de Coco","Cultivated",0,2.31591637873144
+"213","53",17.4461188637797,2008,"Coffee and Cacao","Café y Cacao","Cultivated",0.00931406506347656,17.4368047987162
+"214","59",38.6099151172604,2008,"Subsistence agriculture or pasture","Agricultura de Subsistencia y Pasto","Cultivated",0.494294078918457,38.1156210383419
+"215","65",0.105282718015671,2008,"Lake","Lagunos o lagos","Unvegetated",0,0.105282718015671
+"216","72",0.0844355400274658,2008,"Populated areas","Areas pobladas","Unvegetated",0,0.0844355400274658
+"217","1",4.09712406916024,2009,"Dense conifer forest","Bosque conifero denso","Forest",0.000845804748535156,4.0962782644117
+"218","2",1.86599064005028,2009,"Open conifer forest","Bosque conifero abierto","Forest",0.03657315625,1.82941748380028
+"219","4",1.5016417931692,2009,"Wet broadleaf forest","Bosque latifoliado nublado","Forest",0.000845808776855469,1.50079598439234
+"220","6",10.503217789838,2009,"Moist broadleaf forest","Bosque latifoliado humedo","Forest",0.00850029705810547,10.4947174927799
+"221","8",13.6941228249539,2009,"Semi-moist broadleaf forest","Bosque latifoliado semi-humedo","Forest",0.0118682026367187,13.6822546223172
+"222","9",15.8168090797151,2009,"Dry forest","Bosque seco","Forest",0.162172851745605,15.6546362279695
+"223","12",0.0215080905444336,2009,"Temporarily flooded forested brackish wetlands","Bosque humedales salobres temporalmente inundado","Wetland",0,0.0215080905444336
+"224","13",0.036967609241333,2009,"Permanently flooded forested brackish wetlands","Bosque humedales salobres permanentemente inundado","Wetland",0,0.036967609241333
+"225","14",0.0360467263299561,2009,"Forested freshwater wetlands","Bosque humedales de agua dulce","Wetland",0,0.0360467263299561
+"226","16",11.2568955062301,2009,"Broadleaf matorral","Matorral latifoliado","Shrubland",0.00339373364257813,11.2535017725875
+"227","20",6.02547049875432,2009,"Dry matorral","Matorral seco","Shrubland",0.00848265539550781,6.01698784335881
+"228","21",0.0245247185150146,2009,"Brackish wetland matorral","Matorral de humedales salobres","Shrubland",0,0.0245247185150146
+"229","24",0.00134475499389648,2009,"Grassy brackish wetlands","Sabana de humedales salobres","Wetland",0,0.00134475499389648
+"230","26",0.0206086538604736,2009,"Grassy freshwater marsh","Sabana humedales de agua aulce","Wetland",0,0.0206086538604736
+"231","27",0.0630394228619385,2009,"Sabana de pajon","Sabana de pajon","Grassland",0,0.0630394228619385
+"232","33",0.0318367685778809,2009,"Cattail marsh","Eneal","Wetland",0,0.0318367685778809
+"233","35",0.652617801741124,2009,"Unvegetated or eroded areas","Escasa vegetación o area erosionada","Unvegetated",0,0.652617801741124
+"234","37",5.13446014143281,2009,"Cultivated land","Cultivos intensivos","Cultivated",0.0373547090454102,5.0971054323874
+"235","38",2.48106191151382,2009,"Sugar cane","Caña","Cultivated",0.0297051697387695,2.45135674177505
+"236","39",1.76073184002884,2009,"Rice","Arroz","Cultivated",0.0177591680297852,1.74297267199906
+"237","40",5.91811896890254,2009,"Pasture","Pasto","Cultivated",0.00339570251464844,5.91472326638789
+"238","51",3.36917048817198,2009,"African palm","Palma Africana","Cultivated",0,3.36917048817198
+"239","52",1.05592765114258,2009,"Coco Palm","Palma de Coco","Cultivated",0,1.05592765114258
+"240","53",10.2774280062926,2009,"Coffee and Cacao","Café y Cacao","Cultivated",0,10.2774280062926
+"241","59",24.7760141933904,2009,"Subsistence agriculture or pasture","Agricultura de Subsistencia y Pasto","Cultivated",0.047462107421875,24.7285520859685
+"242","65",0.0271409856005859,2009,"Lake","Lagunos o lagos","Unvegetated",0,0.0271409856005859
+"243","72",0.0502184646759033,2009,"Populated areas","Areas pobladas","Unvegetated",0,0.0502184646759033
+"244","1",4.77072594632576,2010,"Dense conifer forest","Bosque conifero denso","Forest",0.118144562509813,4.65258138381595
+"245","2",2.61929658540967,2010,"Open conifer forest","Bosque conifero abierto","Forest",0.378300330995089,2.24099625441458
+"246","4",2.74390267881691,2010,"Wet broadleaf forest","Bosque latifoliado nublado","Forest",0.339617518639419,2.40428516017749
+"247","6",11.0890321966994,2010,"Moist broadleaf forest","Bosque latifoliado humedo","Forest",0.0602123727416992,11.0288198239577
+"248","8",8.66707514869957,2010,"Semi-moist broadleaf forest","Bosque latifoliado semi-humedo","Forest",0.112637541992187,8.55443760670738
+"249","9",12.3632993069266,2010,"Dry forest","Bosque seco","Forest",0.00508525628662109,12.35821405064
+"250","12",0.00909862337646484,2010,"Temporarily flooded forested brackish wetlands","Bosque humedales salobres temporalmente inundado","Wetland",0,0.00909862337646484
+"251","13",0.0657247759997559,2010,"Permanently flooded forested brackish wetlands","Bosque humedales salobres permanentemente inundado","Wetland",0,0.0657247759997559
+"252","14",0.037568694208374,2010,"Forested freshwater wetlands","Bosque humedales de agua dulce","Wetland",0,0.037568694208374
+"253","16",12.1932988637058,2010,"Broadleaf matorral","Matorral latifoliado","Shrubland",0.073467173883655,12.1198316898221
+"254","20",6.50366478982309,2010,"Dry matorral","Matorral seco","Shrubland",0.0160472968139648,6.48761749300913
+"255","21",0.00450076895019531,2010,"Brackish wetland matorral","Matorral de humedales salobres","Shrubland",0,0.00450076895019531
+"256","24",0,2010,"Grassy brackish wetlands","Sabana de humedales salobres","Wetland",0,0
+"257","26",0.00594971707763672,2010,"Grassy freshwater marsh","Sabana humedales de agua aulce","Wetland",0,0.00594971707763672
+"258","27",0.0563354144012451,2010,"Sabana de pajon","Sabana de pajon","Grassland",0.00931816204833984,0.0470172523529053
+"259","33",0.0141006669567871,2010,"Cattail marsh","Eneal","Wetland",0,0.0141006669567871
+"260","35",0.708483112364878,2010,"Unvegetated or eroded areas","Escasa vegetación o area erosionada","Unvegetated",0.000847688598632812,0.707635423766245
+"261","37",5.99592699241571,2010,"Cultivated land","Cultivos intensivos","Cultivated",0.000847133422851562,5.99507985899286
+"262","38",6.90440756744315,2010,"Sugar cane","Caña","Cultivated",0.108575304443359,6.79583226299979
+"263","39",1.6390556299128,2010,"Rice","Arroz","Cultivated",0,1.6390556299128
+"264","40",5.94247901160162,2010,"Pasture","Pasto","Cultivated",0.00254571270751953,5.9399332988941
+"265","51",2.18477014335021,2010,"African palm","Palma Africana","Cultivated",0,2.18477014335021
+"266","52",0.973307228717651,2010,"Coco Palm","Palma de Coco","Cultivated",0,0.973307228717651
+"267","53",11.5647307397183,2010,"Coffee and Cacao","Café y Cacao","Cultivated",0.0211696016235352,11.5435611380948
+"268","59",25.147427225199,2010,"Subsistence agriculture or pasture","Agricultura de Subsistencia y Pasto","Cultivated",0.329379723561485,24.8180475016375
+"269","65",0.0527703781168141,2010,"Lake","Lagunos o lagos","Unvegetated",0,0.0527703781168141
+"270","72",0.0806741632189941,2010,"Populated areas","Areas pobladas","Unvegetated",0,0.0806741632189941
+"271","1",4.63250799987713,2011,"Dense conifer forest","Bosque conifero denso","Forest",0.0710934974365234,4.56141450244061
+"272","2",1.92346512069763,2011,"Open conifer forest","Bosque conifero abierto","Forest",0.0694136832275391,1.85405143747009
+"273","4",1.71279152015423,2011,"Wet broadleaf forest","Bosque latifoliado nublado","Forest",0.0287806103515625,1.68401090980267
+"274","6",9.84646018601436,2011,"Moist broadleaf forest","Bosque latifoliado humedo","Forest",0.0747214541625977,9.77173873185176
+"275","8",11.069954329884,2011,"Semi-moist broadleaf forest","Bosque latifoliado semi-humedo","Forest",0.0365282834472656,11.0334260464367
+"276","9",11.3014059962467,2011,"Dry forest","Bosque seco","Forest",0.0500205364379883,11.2513854598087
+"277","12",0.0217694143615723,2011,"Temporarily flooded forested brackish wetlands","Bosque humedales salobres temporalmente inundado","Wetland",0,0.0217694143615723
+"278","13",0.0996049482354736,2011,"Permanently flooded forested brackish wetlands","Bosque humedales salobres permanentemente inundado","Wetland",0,0.0996049482354736
+"279","14",0.0938000305249024,2011,"Forested freshwater wetlands","Bosque humedales de agua dulce","Wetland",0,0.0938000305249024
+"280","16",9.9821220863578,2011,"Broadleaf matorral","Matorral latifoliado","Shrubland",0.0805833385620117,9.90153874779579
+"281","20",6.51735541249395,2011,"Dry matorral","Matorral seco","Shrubland",0.0160835681152344,6.50127184437872
+"282","21",0.00325088018615723,2011,"Brackish wetland matorral","Matorral de humedales salobres","Shrubland",0,0.00325088018615723
+"283","24",0,2011,"Grassy brackish wetlands","Sabana de humedales salobres","Wetland",0,0
+"284","26",0.015232945947876,2011,"Grassy freshwater marsh","Sabana humedales de agua aulce","Wetland",0,0.015232945947876
+"285","27",0.0579585776595531,2011,"Sabana de pajon","Sabana de pajon","Grassland",0.000847601379394531,0.0571109762801586
+"286","33",0.0263131708203125,2011,"Cattail marsh","Eneal","Wetland",0,0.0263131708203125
+"287","35",0.736557360941565,2011,"Unvegetated or eroded areas","Escasa vegetación o area erosionada","Unvegetated",0.00338367810058594,0.733173682840979
+"288","37",4.94841802154446,2011,"Cultivated land","Cultivos intensivos","Cultivated",0.0067884814453125,4.94162954009915
+"289","38",3.27447594072772,2011,"Sugar cane","Caña","Cultivated",0.128155308898926,3.14632063182879
+"290","39",2.03008077644357,2011,"Rice","Arroz","Cultivated",0.00758634954833984,2.02249442689523
+"291","40",6.82068973087974,2011,"Pasture","Pasto","Cultivated",0.0373548897094727,6.78333484117027
+"292","51",0.294626594696045,2011,"African palm","Palma Africana","Cultivated",0,0.294626594696045
+"293","52",1.50098333646555,2011,"Coco Palm","Palma de Coco","Cultivated",0,1.50098333646555
+"294","53",10.5949650790285,2011,"Coffee and Cacao","Café y Cacao","Cultivated",0.00761622052001953,10.5873488585085
+"295","59",24.4481712004089,2011,"Subsistence agriculture or pasture","Agricultura de Subsistencia y Pasto","Cultivated",0.162801778985955,24.2853694214229
+"296","65",0.0229398788781738,2011,"Lake","Lagunos o lagos","Unvegetated",0,0.0229398788781738
+"297","72",0.0874155886193848,2011,"Populated areas","Areas pobladas","Unvegetated",0,0.0874155886193848
+"298","1",8.13107389711518,2012,"Dense conifer forest","Bosque conifero denso","Forest",0.0482601828613281,8.08281371425385
+"299","2",2.78225216977244,2012,"Open conifer forest","Bosque conifero abierto","Forest",0.0313346002807617,2.75091756949168
+"300","4",5.47710858834717,2012,"Wet broadleaf forest","Bosque latifoliado nublado","Forest",0.21167630267334,5.26543228567383
+"301","6",14.8281287403683,2012,"Moist broadleaf forest","Bosque latifoliado humedo","Forest",0.011026546081543,14.8171021942868
+"302","8",15.4863542465657,2012,"Semi-moist broadleaf forest","Bosque latifoliado semi-humedo","Forest",0.0152331813964844,15.4711210651692
+"303","9",20.3492103912784,2012,"Dry forest","Bosque seco","Forest",0.0475115703735352,20.3016988209049
+"304","12",0.0145822979931641,2012,"Temporarily flooded forested brackish wetlands","Bosque humedales salobres temporalmente inundado","Wetland",0,0.0145822979931641
+"305","13",0.0658839747198486,2012,"Permanently flooded forested brackish wetlands","Bosque humedales salobres permanentemente inundado","Wetland",0,0.0658839747198486
+"306","14",0.0349575896386719,2012,"Forested freshwater wetlands","Bosque humedales de agua dulce","Wetland",0,0.0349575896386719
+"307","16",10.7302993132841,2012,"Broadleaf matorral","Matorral latifoliado","Shrubland",0.0270989489746094,10.7032003643095
+"308","20",9.32387691560666,2012,"Dry matorral","Matorral seco","Shrubland",0.00169347314453125,9.32218344246213
+"309","21",0.0122015101794434,2012,"Brackish wetland matorral","Matorral de humedales salobres","Shrubland",0,0.0122015101794434
+"310","24",0.00158947156738281,2012,"Grassy brackish wetlands","Sabana de humedales salobres","Wetland",0,0.00158947156738281
+"311","26",0.00500907616577148,2012,"Grassy freshwater marsh","Sabana humedales de agua aulce","Wetland",0,0.00500907616577148
+"312","27",0.0862834625231934,2012,"Sabana de pajon","Sabana de pajon","Grassland",0,0.0862834625231934
+"313","33",0.00404423992797852,2012,"Cattail marsh","Eneal","Wetland",0,0.00404423992797852
+"314","35",0.781758239741685,2012,"Unvegetated or eroded areas","Escasa vegetación o area erosionada","Unvegetated",0,0.781758239741685
+"315","37",6.93247057483734,2012,"Cultivated land","Cultivos intensivos","Cultivated",0.000848573608398437,6.93162200122894
+"316","38",5.71756142873738,2012,"Sugar cane","Caña","Cultivated",0.0144294401855469,5.70313198855183
+"317","39",1.43286534841885,2012,"Rice","Arroz","Cultivated",0,1.43286534841885
+"318","40",5.63252901100237,2012,"Pasture","Pasto","Cultivated",0.000849043579101562,5.63167996742327
+"319","51",0.3575004734021,2012,"African palm","Palma Africana","Cultivated",0,0.3575004734021
+"320","52",1.33700365715501,2012,"Coco Palm","Palma de Coco","Cultivated",0,1.33700365715501
+"321","53",13.8423982938924,2012,"Coffee and Cacao","Café y Cacao","Cultivated",0.00593095733642578,13.836467336556
+"322","59",33.965004451118,2012,"Subsistence agriculture or pasture","Agricultura de Subsistencia y Pasto","Cultivated",0.0592554072265625,33.9057490438914
+"323","65",0.0445213022753906,2012,"Lake","Lagunos o lagos","Unvegetated",0,0.0445213022753906
+"324","72",0.069469875256958,2012,"Populated areas","Areas pobladas","Unvegetated",0,0.069469875256958
+"325","1",2.30165095109852,2013,"Dense conifer forest","Bosque conifero denso","Forest",0.0663419407348633,2.23530901036366
+"326","2",10.5427272840697,2013,"Open conifer forest","Bosque conifero abierto","Forest",5.64300099261474,4.89972629145496
+"327","4",1.8483946492434,2013,"Wet broadleaf forest","Bosque latifoliado nublado","Forest",0.238170924072266,1.61022372517113
+"328","6",6.84129149869445,2013,"Moist broadleaf forest","Bosque latifoliado humedo","Forest",0.238189725524902,6.60310177316955
+"329","8",6.58309345964586,2013,"Semi-moist broadleaf forest","Bosque latifoliado semi-humedo","Forest",0.0748490556030273,6.50824440404283
+"330","9",12.4345677327046,2013,"Dry forest","Bosque seco","Forest",1.17978727514649,11.2547804575581
+"331","12",0.013792191776123,2013,"Temporarily flooded forested brackish wetlands","Bosque humedales salobres temporalmente inundado","Wetland",0,0.013792191776123
+"332","13",0.0401610658728027,2013,"Permanently flooded forested brackish wetlands","Bosque humedales salobres permanentemente inundado","Wetland",0,0.0401610658728027
+"333","14",0.0451076815740967,2013,"Forested freshwater wetlands","Bosque humedales de agua dulce","Wetland",0,0.0451076815740967
+"334","16",10.4092246696963,2013,"Broadleaf matorral","Matorral latifoliado","Shrubland",0.00169827838134766,10.407526391315
+"335","20",9.00088870600742,2013,"Dry matorral","Matorral seco","Shrubland",1.73815188787842,7.262736818129
+"336","21",0.00510236844055176,2013,"Brackish wetland matorral","Matorral de humedales salobres","Shrubland",0,0.00510236844055176
+"337","24",0.00534828042724609,2013,"Grassy brackish wetlands","Sabana de humedales salobres","Wetland",0,0.00534828042724609
+"338","26",0.00927420182250976,2013,"Grassy freshwater marsh","Sabana humedales de agua aulce","Wetland",0,0.00927420182250976
+"339","27",0.0224722879864502,2013,"Sabana de pajon","Sabana de pajon","Grassland",0.0135931448364258,0.00887914315002442
+"340","33",0.00481955749755859,2013,"Cattail marsh","Eneal","Wetland",0,0.00481955749755859
+"341","35",0.872384844941636,2013,"Unvegetated or eroded areas","Escasa vegetación o area erosionada","Unvegetated",0.281908198913574,0.590476646028062
+"342","37",5.76909553149093,2013,"Cultivated land","Cultivos intensivos","Cultivated",1.73863096612549,4.03046456536544
+"343","38",5.29182570331215,2013,"Sugar cane","Caña","Cultivated",0.0381767702636719,5.25364893304848
+"344","39",0.535984577067261,2013,"Rice","Arroz","Cultivated",0,0.535984577067261
+"345","40",5.43855456670387,2013,"Pasture","Pasto","Cultivated",0.00679152935791016,5.43176303734596
+"346","51",0.0224819538433838,2013,"African palm","Palma Africana","Cultivated",0,0.0224819538433838
+"347","52",0.528377573405151,2013,"Coco Palm","Palma de Coco","Cultivated",0,0.528377573405151
+"348","53",5.54702489705238,2013,"Coffee and Cacao","Café y Cacao","Cultivated",0.00254603338623047,5.54447886366615
+"349","59",19.3422333913469,2013,"Subsistence agriculture or pasture","Agricultura de Subsistencia y Pasto","Cultivated",0.440087048889161,18.9021463424577
+"350","65",0.0200879198716227,2013,"Lake","Lagunos o lagos","Unvegetated",0,0.0200879198716227
+"351","72",0.0103634327038574,2013,"Populated areas","Areas pobladas","Unvegetated",0,0.0103634327038574
+"352","1",8.73153380769989,2014,"Dense conifer forest","Bosque conifero denso","Forest",7.52539567388978,1.20613813381011
+"353","2",4.41796133075487,2014,"Open conifer forest","Bosque conifero abierto","Forest",1.70778337134795,2.71017795940692
+"354","4",1.0961798654043,2014,"Wet broadleaf forest","Bosque latifoliado nublado","Forest",0.139874845275879,0.956305020128421
+"355","6",8.86064730079443,2014,"Moist broadleaf forest","Bosque latifoliado humedo","Forest",0.00935361956787109,8.85129368122656
+"356","8",7.55916148862474,2014,"Semi-moist broadleaf forest","Bosque latifoliado semi-humedo","Forest",0.0076571923828125,7.55150429624193
+"357","9",10.0763140804848,2014,"Dry forest","Bosque seco","Forest",0.0016930029296875,10.0746210775551
+"358","12",0.00846566016418457,2014,"Temporarily flooded forested brackish wetlands","Bosque humedales salobres temporalmente inundado","Wetland",0,0.00846566016418457
+"359","13",0.0449602105883789,2014,"Permanently flooded forested brackish wetlands","Bosque humedales salobres permanentemente inundado","Wetland",0,0.0449602105883789
+"360","14",0.102399948642578,2014,"Forested freshwater wetlands","Bosque humedales de agua dulce","Wetland",0,0.102399948642578
+"361","16",12.9197970987706,2014,"Broadleaf matorral","Matorral latifoliado","Shrubland",0.0144240727539063,12.9053730260167
+"362","20",6.12512548127848,2014,"Dry matorral","Matorral seco","Shrubland",0,6.12512548127848
+"363","21",0.0147734836425781,2014,"Brackish wetland matorral","Matorral de humedales salobres","Shrubland",0,0.0147734836425781
+"364","24",0.00332212112487793,2014,"Grassy brackish wetlands","Sabana de humedales salobres","Wetland",0,0.00332212112487793
+"365","26",0.00753821282348633,2014,"Grassy freshwater marsh","Sabana humedales de agua aulce","Wetland",0,0.00753821282348633
+"366","27",0.546874047236496,2014,"Sabana de pajon","Sabana de pajon","Grassland",0.66594773724437,-0.119073690007874
+"367","33",0.00245184397216797,2014,"Cattail marsh","Eneal","Wetland",0,0.00245184397216797
+"368","35",0.669546907006779,2014,"Unvegetated or eroded areas","Escasa vegetación o area erosionada","Unvegetated",0.00932652044677734,0.660220386560002
+"369","37",8.12480331130875,2014,"Cultivated land","Cultivos intensivos","Cultivated",0.105968865356445,8.0188344459523
+"370","38",5.25409337714072,2014,"Sugar cane","Caña","Cultivated",0.0754694334716797,5.17862394366904
+"371","39",0.863551175906625,2014,"Rice","Arroz","Cultivated",0.0016909130859375,0.861860262820688
+"372","40",5.71873024080404,2014,"Pasture","Pasto","Cultivated",0.0127187398681641,5.70601150093588
+"373","51",0.0241252404943848,2014,"African palm","Palma Africana","Cultivated",0,0.0241252404943848
+"374","52",0.848624747304687,2014,"Coco Palm","Palma de Coco","Cultivated",0,0.848624747304687
+"375","53",8.61245100191642,2014,"Coffee and Cacao","Café y Cacao","Cultivated",0.000847054992675781,8.61160394692375
+"376","59",24.1823626069359,2014,"Subsistence agriculture or pasture","Agricultura de Subsistencia y Pasto","Cultivated",0.0344606763916016,24.1479019305443
+"377","65",0.0464597366486912,2014,"Lake","Lagunos o lagos","Unvegetated",0.00169726104736328,0.0447624756013279
+"378","72",0.0393969905950928,2014,"Populated areas","Areas pobladas","Unvegetated",0,0.0393969905950928
+"379","1",7.32801459790844,2015,"Dense conifer forest","Bosque conifero denso","Forest",2.68643550777612,4.64157909013232
+"380","2",5.28638914976697,2015,"Open conifer forest","Bosque conifero abierto","Forest",2.81074735082194,2.47564179894503
+"381","4",4.12484532522562,2015,"Wet broadleaf forest","Bosque latifoliado nublado","Forest",1.68857223960128,2.43627308562434
+"382","6",16.7054851885346,2015,"Moist broadleaf forest","Bosque latifoliado humedo","Forest",2.0725262318874,14.6329589566472
+"383","8",10.7563288917593,2015,"Semi-moist broadleaf forest","Bosque latifoliado semi-humedo","Forest",0.405808229370117,10.3505206623892
+"384","9",13.2899002138323,2015,"Dry forest","Bosque seco","Forest",0.189845308508301,13.100054905324
+"385","12",0.0149228987768555,2015,"Temporarily flooded forested brackish wetlands","Bosque humedales salobres temporalmente inundado","Wetland",0,0.0149228987768555
+"386","13",0.216911327217407,2015,"Permanently flooded forested brackish wetlands","Bosque humedales salobres permanentemente inundado","Wetland",0.0727558308105468,0.14415549640686
+"387","14",0.217976567213745,2015,"Forested freshwater wetlands","Bosque humedales de agua dulce","Wetland",0,0.217976567213745
+"388","16",13.9824092794582,2015,"Broadleaf matorral","Matorral latifoliado","Shrubland",0.912163870605468,13.0702454088527
+"389","20",4.58005625984444,2015,"Dry matorral","Matorral seco","Shrubland",0.00423382012939453,4.57582243971505
+"390","21",0.0175542055051078,2015,"Brackish wetland matorral","Matorral de humedales salobres","Shrubland",0,0.0175542055051078
+"391","24",0.0169908309881592,2015,"Grassy brackish wetlands","Sabana de humedales salobres","Wetland",0.00422990808105469,0.0127609229071045
+"392","26",0.00999063187133789,2015,"Grassy freshwater marsh","Sabana humedales de agua aulce","Wetland",0,0.00999063187133789
+"393","27",0.206307728544826,2015,"Sabana de pajon","Sabana de pajon","Grassland",0.076400282409668,0.129907446135158
+"394","33",0.00524836427429199,2015,"Cattail marsh","Eneal","Wetland",0.000846126159667969,0.00440223811462402
+"395","35",0.466974335896607,2015,"Unvegetated or eroded areas","Escasa vegetación o area erosionada","Unvegetated",0.0186541284179687,0.448320207478638
+"396","37",5.61400968572826,2015,"Cultivated land","Cultivos intensivos","Cultivated",0.184800114074707,5.42920957165355
+"397","38",4.5459188669225,2015,"Sugar cane","Caña","Cultivated",0.00169555285644531,4.54422331406605
+"398","39",1.19431075805789,2015,"Rice","Arroz","Cultivated",0.00337538940429687,1.19093536865359
+"399","40",3.24409902688244,2015,"Pasture","Pasto","Cultivated",0.062790116394043,3.1813089104884
+"400","51",0.0552234143829346,2015,"African palm","Palma Africana","Cultivated",0,0.0552234143829346
+"401","52",1.4335935426593,2015,"Coco Palm","Palma de Coco","Cultivated",0.0954877910766602,1.33810575158264
+"402","53",7.55942869762698,2015,"Coffee and Cacao","Café y Cacao","Cultivated",0.38094214831543,7.17848654931155
+"403","59",27.6031016510693,2015,"Subsistence agriculture or pasture","Agricultura de Subsistencia y Pasto","Cultivated",2.72375962702685,24.8793420240425
+"404","65",0.0201775247369385,2015,"Lake","Lagunos o lagos","Unvegetated",0,0.0201775247369385
+"405","72",0.0995201789398193,2015,"Populated areas","Areas pobladas","Unvegetated",0,0.0995201789398193
+"406","1",17.5436557102711,2016,"Dense conifer forest","Bosque conifero denso","Forest",0,17.5436557102711
+"407","2",7.9176945283595,2016,"Open conifer forest","Bosque conifero abierto","Forest",0.000847101501464844,7.91684742685803
+"408","4",8.53087974670251,2016,"Wet broadleaf forest","Bosque latifoliado nublado","Forest",0,8.53087974670251
+"409","6",31.8590771077598,2016,"Moist broadleaf forest","Bosque latifoliado humedo","Forest",0,31.8590771077598
+"410","8",13.7496296584589,2016,"Semi-moist broadleaf forest","Bosque latifoliado semi-humedo","Forest",0,13.7496296584589
+"411","9",11.3533763512388,2016,"Dry forest","Bosque seco","Forest",0.00681286077880859,11.34656349046
+"412","12",0.0436397184729004,2016,"Temporarily flooded forested brackish wetlands","Bosque humedales salobres temporalmente inundado","Wetland",0,0.0436397184729004
+"413","13",1.65511558514277,2016,"Permanently flooded forested brackish wetlands","Bosque humedales salobres permanentemente inundado","Wetland",0,1.65511558514277
+"414","14",0.197827104772949,2016,"Forested freshwater wetlands","Bosque humedales de agua dulce","Wetland",0,0.197827104772949
+"415","16",22.8400496329674,2016,"Broadleaf matorral","Matorral latifoliado","Shrubland",0,22.8400496329674
+"416","20",4.159342119966,2016,"Dry matorral","Matorral seco","Shrubland",0.00170321899414062,4.15763890097186
+"417","21",0.0761967590085665,2016,"Brackish wetland matorral","Matorral de humedales salobres","Shrubland",0,0.0761967590085665
+"418","24",0.00397428305236816,2016,"Grassy brackish wetlands","Sabana de humedales salobres","Wetland",0,0.00397428305236816
+"419","26",0.0280748026708984,2016,"Grassy freshwater marsh","Sabana humedales de agua aulce","Wetland",0,0.0280748026708984
+"420","27",0.218224757406544,2016,"Sabana de pajon","Sabana de pajon","Grassland",0,0.218224757406544
+"421","33",0.0164752805059814,2016,"Cattail marsh","Eneal","Wetland",0,0.0164752805059814
+"422","35",0.64074577510315,2016,"Unvegetated or eroded areas","Escasa vegetación o area erosionada","Unvegetated",0,0.64074577510315
+"423","37",5.59564231227524,2016,"Cultivated land","Cultivos intensivos","Cultivated",0,5.59564231227524
+"424","38",7.08843508567449,2016,"Sugar cane","Caña","Cultivated",0.0814132678833008,7.00702181779119
+"425","39",1.5485278900897,2016,"Rice","Arroz","Cultivated",0.0843335369262696,1.46419435316343
+"426","40",8.84725717455486,2016,"Pasture","Pasto","Cultivated",0,8.84725717455486
+"427","51",0.16255564189209,2016,"African palm","Palma Africana","Cultivated",0,0.16255564189209
+"428","52",3.02232775709468,2016,"Coco Palm","Palma de Coco","Cultivated",0,3.02232775709468
+"429","53",19.2784963377805,2016,"Coffee and Cacao","Café y Cacao","Cultivated",0,19.2784963377805
+"430","59",50.9907787445481,2016,"Subsistence agriculture or pasture","Agricultura de Subsistencia y Pasto","Cultivated",0.00681287219238281,50.9839658723557
+"431","65",0.067902308548584,2016,"Lake","Lagunos o lagos","Unvegetated",0,0.067902308548584
+"432","72",0.105121401021729,2016,"Populated areas","Areas pobladas","Unvegetated",0,0.105121401021729
