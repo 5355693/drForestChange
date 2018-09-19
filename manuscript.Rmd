@@ -5,6 +5,7 @@ date: "5/25/2018"
 output: html_document
 bibliography: bibliography.bib
 csl: remoteSensingOfEnvironment.csl
+fig_caption: yes
 ---
 #Introduction
 The United Nations (UN) 2030 Agenda for Sustainable Development proposes a vision of a "world free of poverty, hunger, disease and want, where all life can thrive" [@un2015resolution,1]. At the heart of the agenda are the 17 Sustainable Development Goals (SDG), which were formally announced in 2016 and which address the world's most pressing economic, social, and environmental problems. Crafting effective policy interventions to acheive these goals requires ongoing assessments of progress; doing so can reveal which interventions work and which do not. Monitoring can also help galvanize action if, for example, it reveals significant successes or shortcomings. Evaluating progress towards the SDG is also extremely challenging: it requires timely, highly resolved data at a global scale for each of the 169 indicators underlying the SDG. For many of the indicators, it also requires an adequate historical baseline. For example, a key indicator of progress for SDG 15, focused on conservation of terrestrial ecosystems, is change in the rate of deforestation. 
@@ -15,7 +16,51 @@ The DR serves as a useful case study for at least two reasons. First, it support
 
 #Methods
 ##Quantifying forest change
-We estimated annual changes in forest cover between 2000 and 2016 using version 1.4 of the Hansen et al. [-@hansen2013high] data, accessed through the Google Earth Engine (http://earthenginepartners.appspot.com/science-2013-global-forest). We used the per-pixel estimate of forest cover in 2000 as our baseline such that our estimates of the area of forest lost or gained are corrected for initial conditions. For example, a pixel (30m^2^) deforested between 2000 and 2016 that was estimated to have had 25% forest cover in 2000 was calculated as a loss of 225 m^2^ (i.e., total pixel area multiplied by the percent of forest cover in 2000). We generated separate estimates of change for each forest type identified in a raster of land-cover types produced by the environment ministry (Ministerio Medio Ambiente y Recursos Naturales [MARENA]) in 1996, which provides the only pre-2000 estimate of land-cover types across the country. Fire can be a significant driver of vegetation dynamics in the DR, especially in montane forests [@sherman2008fire], so to examine the role of wildfire as an agent of forest loss we used the monthly, MODIS-based estimates of the area burned from Giglio et al. [-@giglio2015modis] . To do so, we assumed that forest loss was caused by fire for any pixel in the Hansen et al. [-@hansen2013high] data that was within the boundaries of a burned area and was estimated as having been deforested in that year. Our estimates of forest lost to wildlife are likely exaggerated because area burned was estimated at a larger spatial scale than forest change (500m^2^ and 30m^2^, respectively). Variation in temporal resolution - area burned is estimated on a monthly basis, whereas forest loss and gain is estimated annually based on LANDSAT images during the growing season - may also contributes to error in our annual estimates of forest-area burned, although this source of error should be insignificant over the course of the entire study.
+We estimated annual changes in forest cover between 2000 and 2016 using version 1.4 of the Hansen et al. [-@hansen2013high] data, accessed through the Google Earth Engine (http://earthenginepartners.appspot.com/science-2013-global-forest). We used the per-pixel estimate of forest cover in 2000 as our baseline such that our estimates of the area of forest lost or gained are corrected for initial conditions. For example, a pixel (30m^2^) deforested between 2000 and 2016 that was estimated to have had 25% forest cover in 2000 was calculated as a loss of 225 m^2^ (i.e., total pixel area multiplied by the percent of forest cover in 2000). We generated separate estimates of change for each forest type identified in a raster of land-cover types produced by the environment ministry (Ministerio Medio Ambiente y Recursos Naturales [MARENA]) in 1996, which provides the only pre-2000 estimate of land-cover types across the country. 
 
+##Separating wildfire from other causes of forest loss
+Fire can be a significant driver of vegetation dynamics in the DR, especially in montane forests [@sherman2008fire], so to examine the role of wildfire as an agent of forest loss we used the monthly, MODIS-based estimates of the area burned from Giglio et al. [-@giglio2015modis] . To do so, we assumed that forest loss was caused by fire for any pixel in the Hansen et al. [-@hansen2013high] data that was within the boundaries of a burned area and was estimated as having been deforested in that year. Our estimates of forest lost to wildlife are likely exaggerated because area burned was estimated at a larger spatial scale than forest change (500m^2^ and 30m^2^, respectively). Variation in temporal resolution - area burned is estimated on a monthly basis, whereas forest loss and gain is estimated annually based on LANDSAT images during the growing season - may also contributes to error in our annual estimates of forest-area burned, although this source of error should be insignificant over the course of the entire study.
+
+##Quantifying forest change within protected areas
 To examine whether forest within formally protected areas showed different patterns of forest change, we calculated forest gain, forest loss, and area burned for each protected area within the DR, using a shapefile of protected-area boundaries provided by MARENA. 
+
+#Results
+##Quantifying forest change
+All forest types shrank in area between 2000 and 2010 (Fig. 1, Table 1). 
+```{r, echo=FALSE,message=FALSE,warning=FALSE,fig.align='left', fig.cap='Figure 1. Change in the areal extent of different forest types in the Dominican Republic, 2000-2016'}
+library(ggplot2)
+library(tidyr)
+library(dplyr)
+forestChange <- read.csv(file = "/Users/johnlloyd/Documents/GitHub/drForestChange/EarthEngineOutput/forestChange.csv")
+plot1 <-
+forestChange %>%
+  select(landCoverName, sqKm2000, area2016) %>%
+  filter(landCoverName == "Dense conifer forest"|landCoverName == "Open conifer forest"|landCoverName == "Wet broadleaf forest"|
+           landCoverName == "Moist broadleaf forest"|landCoverName == "Semi-moist broadleaf forest"|landCoverName == "Dry forest")%>%
+  gather(., key = "Year", value = "Area", sqKm2000, area2016)
+
+plot1 %>%
+mutate(Year = ifelse(Year == "sqKm2000", "2000", "2016"))%>%
+ggplot(., aes(fill=Year, y=Area, x=landCoverName)) +
+  geom_bar(position="dodge", stat="identity") + scale_fill_grey(start = 0.4, end = 0.7) + theme_minimal() + theme(axis.text.x = element_text(angle = 340,
+                                                                                                                                             vjust = 0.5),
+                                                                                                                  axis.title.x = element_text(size = 18),
+                                                                                                                  axis.title.y = element_text(size = 18),
+                                                                                                                  axis.text.x.bottom = element_text(size = 10),
+                                                                                                                  axis.text.y = element_text(size = 10)) + 
+  xlab("Forest type") + ylab("Areal extent (sq. km)")
+```
+
+\begin{table}[]
+\begin{tabular}{lllll}
+Forest type (original classification name) & Area (sq. km), 2000 & Area (sq. km), 2016 & Net change, sq. km & Net change, \% \\
+Dense conifer (conifero denso) & 1660.1 & 1503.0 & -157.1 & -10.5 \\
+Open conifer (conifero abierto) & 638.7 & 566.7 & -72.0 & -12.7 \\
+Wet broadleaf (latifoliado nublado) & 951.8 & 898.9 & -52.8 & -5.9 \\
+Moist broadleaf (latifoliado humedo) & 2455.6 & 2362.2 & -204.3 & -8.7 \\
+Semi-moist broadleaf (latifoliado semi-humedo) & 1527.0 & 1350.1 & -176.9 & -13.1 \\
+Dry (seco) & 2173.1 & 1692l9 & -210.2 & -10.7
+\end{tabular}
+\end{table}
+
 #Literature Cited
