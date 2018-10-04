@@ -3065,6 +3065,7 @@ paForestLossTotaledWith2000Area %>%
                     values = c("#999999", "#E69F00", "#56B4E9")) + scale_x_discrete(labels = c("Vallue Nuevo","Carmen Ramírez","Armando Bermúdez"))
 dev.off()
 ###Open conifer
+png(filename = "Figure5.png", width = 8, height = 6, units = "in", res = 300)
 paForestLossTotaledWith2000Area %>%
   filter(landCoverCode == 2, cumPerc < 0.76) %>%
   gather(key = "lossSource", value = "sqKm", totalUnburnedLoss, totalBurned, stillForested)%>%
@@ -3075,7 +3076,9 @@ paForestLossTotaledWith2000Area %>%
   scale_fill_manual(name = "Status of forest, 2016",
                     labels = c("Intact", "Deforested, fire", "Deforested, other cause"),
                     values = c("#999999", "#E69F00", "#56B4E9")) + scale_x_discrete(labels = rev(c("Bahoruco","Carmen Ramírez","Vallue Nuevo")))
+dev.off()
 ###Cloud forest
+png(filename = "Figure6.png", width = 8, height = 6, units = "in", res = 300)
 paForestLossTotaledWith2000Area %>%
   filter(landCoverCode == 4, cumPerc < 0.95) %>%
   gather(key = "lossSource", value = "sqKm", totalUnburnedLoss, totalBurned, stillForested)%>%
@@ -3089,7 +3092,9 @@ paForestLossTotaledWith2000Area %>%
                                                                                              "Bahoruco","Neiba","Carmen Ramírez",
                                                                                              "Tavárez Justo","Nalga de Maco",
                                                                                              "Alto Bao")))
+dev.off()
 ###Moist broadleaf
+png(filename = "Figure7.png", width = 8, height = 6, units = "in", res = 300)
 paForestLossTotaledWith2000Area %>%
   filter(landCoverCode == 6, cumPerc < 0.76) %>%
   gather(key = "lossSource", value = "sqKm", totalUnburnedLoss, totalBurned, stillForested)%>%
@@ -3105,7 +3110,9 @@ paForestLossTotaledWith2000Area %>%
                                                                                            "Valle Nuevo", "Quita Espuela",
                                                                                            "Tavárez Justo","Carmen Ramírez",
                                                                                            "Caamaño","Hatillo")))
+dev.off()
 ###Semi-moist broadleaf
+png(filename = "Figure8.png", width = 8, height = 6, units = "in", res = 300)
 paForestLossTotaledWith2000Area %>%
   filter(landCoverCode == 8, cumPerc < 0.76) %>%
   gather(key = "lossSource", value = "sqKm", totalUnburnedLoss, totalBurned, stillForested)%>%
@@ -3117,7 +3124,9 @@ paForestLossTotaledWith2000Area %>%
                     labels = c("Intact", "Deforested, fire", "Deforested, other cause"),
                     values = c("#999999", "#E69F00", "#56B4E9")) + scale_x_discrete(labels = rev(c("Cotubanamá", "Bahoruco", "Jaragua",
                                                                                              "Punta Espada")))
+dev.off()
 ###Dry forest
+png(filename = "Figure9.png", width = 8, height = 6, units = "in", res = 300)
 paForestLossTotaledWith2000Area %>%
   filter(landCoverCode == 9, cumPerc < 0.76) %>%
   gather(key = "lossSource", value = "sqKm", totalUnburnedLoss, totalBurned, stillForested)%>%
@@ -3130,6 +3139,7 @@ paForestLossTotaledWith2000Area %>%
                       values = c("#999999", "#E69F00", "#56B4E9")) + scale_x_discrete(labels = rev(c("Jaragua", "Bahoruco",
                                                                                              "Anacaona", "Cabeza de Toro", "Río Cana",
                                                                                              "Hatillo", "Caamaño")))
+dev.off()
                       
 
 ##
