@@ -2784,9 +2784,30 @@ gather(., key = "lossType", value = "sqKm", sqKm, sqKmNoFire) %>%
   ggplot(., aes(x = year, y = sqKm, color = lossType)) + geom_line() + facet_wrap(~landCoverName, scales = "free_y") + 
   xlab("Year") + ylab("Area covered (sq. km)") + scale_color_discrete(name = "Source of forest loss",
                          labels = c("All sources","All sources except fire"))
+##Annual loss
+png(filename = "figureAnnualLoss.png", width = 8, height = 8, units = "in",
+    res = 300)  
+forestAreaAnnual %>%
+  filter(landCoverName == "Dense conifer forest"|landCoverName == "Open conifer forest"|landCoverName == "Wet broadleaf forest"|
+           landCoverName == "Moist broadleaf forest"|landCoverName == "Semi-moist broadleaf forest"|landCoverName == "Dry forest")%>%
+  mutate(labelName = ifelse(landCoverName == "Dense conifer forest", "Closed-canopy pine", 
+                            ifelse(landCoverName == "Open conifer forest", "Open-canopy pine",
+                                   ifelse(landCoverName == "Dry forest", "Dry", 
+                                          ifelse(landCoverName == "Moist broadleaf forest", "Moist broadleaf",
+                                                 ifelse(landCoverName == "Semi-moist broadleaf forest", "Semi-moist broadleaf",
+                                                        ifelse(landCoverName == "Wet broadleaf forest", "Cloud", "NA"))))))) %>%
+  mutate(labelName = factor(labelName, levels = c("Closed-canopy pine", "Open-canopy pine", "Cloud", "Moist broadleaf",
+                                                  "Semi-moist broadleaf", "Dry"))) %>%
+  group_by(labelName) %>%
+  mutate(annualLoss = abs(sqKm - lag(sqKm))) %>%
+  ggplot(., aes(x = year, y = annualLoss)) + geom_line() + facet_wrap(~labelName, scales = "free_y") + geom_smooth() + 
+  labs(x = "Year", y = expression(paste("Forest area (", "km"^"2",")", " lost"))) + 
+  theme(axis.title.y = element_text(size = 18),
+        axis.title.x = element_text(size = 18))
+dev.off()
 
 ##Plotting it as forest lost, instead
-png(filename = "Figure3.png", width = 7, height = 4, units = "in",
+png(filename = "Figure3.png", width = 8, height = 8, units = "in",
     res = 300)
 forestAreaAnnual %>%
   group_by(landCoverCode) %>%
@@ -2794,20 +2815,22 @@ forestAreaAnnual %>%
   group_by(landCoverCode, year) %>%
   mutate(cumLossAll = year2000Extent - sqKm,
          cumLossNoFire = year2000Extent - sqKmNoFire) %>%
-  mutate(labelName = ifelse(landCoverName == "Dense conifer forest", "Closed-canopy conifer", 
-                            ifelse(landCoverName == "Open conifer forest", "Open-canopy conifer",
+  mutate(labelName = ifelse(landCoverName == "Dense conifer forest", "Closed-canopy pine", 
+                            ifelse(landCoverName == "Open conifer forest", "Open-canopy pine",
                                    ifelse(landCoverName == "Dry forest", "Dry", 
                                           ifelse(landCoverName == "Moist broadleaf forest", "Moist broadleaf",
                                                  ifelse(landCoverName == "Semi-moist broadleaf forest", "Semi-moist broadleaf",
                                                         ifelse(landCoverName == "Wet broadleaf forest", "Cloud", "NA"))))))) %>%
-  mutate(labelName = factor(labelName, levels = c("Closed-canopy conifer", "Open-canopy conifer", "Cloud", "Moist broadleaf",
+  mutate(labelName = factor(labelName, levels = c("Closed-canopy pine", "Open-canopy pine", "Cloud", "Moist broadleaf",
                                                   "Semi-moist broadleaf", "Dry"))) %>%
   gather(., key = "lossType", value = "sqKm", cumLossAll, cumLossNoFire) %>%
   filter(landCoverCategory == "Forest") %>%
   ggplot(., aes(x = year, y = sqKm, color = lossType)) + geom_line() + facet_wrap(~labelName, scales = "free_y") + 
-  xlab("Year") + ylab("Cumulative area of forest lost (sq. km)") + scale_color_manual(name = "Source of forest loss",
+  labs(x = "Year", y = expression(paste("Cumulative area (", "km"^"2",")", " of forest lost"))) + scale_color_manual(name = "Source of forest loss",
                                                                       labels = c("All sources including fire","All sources except fire"),
-                                                                      values = c("#E69F00", "#56B4E9"))
+                                                                      values = c("#E69F00", "#56B4E9")) + 
+  theme(axis.title.y = element_text(size = 18),
+        axis.title.x = element_text(size = 18))
 dev.off()
 
 lcBurnedAnnually %>%
@@ -3052,40 +3075,44 @@ paForestLostAllYearsTotaled <- paForestLostAllYears %>%
 
 ##Figures of loss v. intact for each forest type by top protected areas (those containing 75% of all protected forest of that type)
 ###Dense conifer
-png(filename = "Figure4.png", width = 8, height = 6, units = "in", res = 300)
+png(filename = "Figure4.png", width = 8, height = 8, units = "in", res = 300)
 paForestLossTotaledWith2000Area %>%
   filter(landCoverCode == 1, cumPerc < 0.76) %>%
   gather(key = "lossSource", value = "sqKm", totalUnburnedLoss, totalBurned, stillForested)%>%
   #filter(lossSource != "stillForested") %>%
   ggplot(., aes(x = reorder(NOMBRE,desc(cumPerc)), y = sqKm)) + geom_bar(aes(fill = lossSource), stat = "identity", position = position_stack()) + 
-  theme(axis.text.x = element_text(angle = 340), axis.title.y = element_text(size = 18),
-        axis.title.x = element_text(size = 18)) + xlab("Protected area") + ylab("Area (sq.km) of protected\nclosed-canopy conifer forest") + 
+  theme(axis.text.x = element_text(angle = 340, size = 14), axis.title.y = element_text(size = 18),
+        axis.title.x = element_text(size = 18)) + 
+  labs(x = "Protected area", y = expression(paste("Area (", "km"^"2",")", " of protected closed-canopy pine forest"))) + 
   scale_fill_manual(name = "Status of forest, 2016",
                     labels = c("Intact", "Deforested, fire", "Deforested, other cause"),
                     values = c("#999999", "#E69F00", "#56B4E9")) + scale_x_discrete(labels = c("Vallue Nuevo","Carmen Ramírez","Armando Bermúdez"))
+
 dev.off()
 ###Open conifer
-png(filename = "Figure5.png", width = 8, height = 6, units = "in", res = 300)
+png(filename = "Figure5.png", width = 8, height = 8, units = "in", res = 300)
 paForestLossTotaledWith2000Area %>%
   filter(landCoverCode == 2, cumPerc < 0.76) %>%
   gather(key = "lossSource", value = "sqKm", totalUnburnedLoss, totalBurned, stillForested)%>%
   #filter(lossSource != "stillForested") %>%
   ggplot(., aes(x = reorder(NOMBRE,desc(cumPerc)), y = sqKm)) + geom_bar(aes(fill = lossSource), stat = "identity", position = position_stack()) + 
-  theme(axis.text.x = element_text(angle = 340), axis.title.y = element_text(size = 18),
-        axis.title.x = element_text(size = 18)) + xlab("Protected area") + ylab("Area (sq.km) of protected open-canopy conifer forest") + 
+  theme(axis.text.x = element_text(angle = 340, size = 14), axis.title.y = element_text(size = 18),
+        axis.title.x = element_text(size = 18)) + 
+  labs(x = "Protected area", y = expression(paste("Area (", "km"^"2",")", " of protected open-canopy pine forest"))) +
   scale_fill_manual(name = "Status of forest, 2016",
                     labels = c("Intact", "Deforested, fire", "Deforested, other cause"),
                     values = c("#999999", "#E69F00", "#56B4E9")) + scale_x_discrete(labels = rev(c("Bahoruco","Carmen Ramírez","Vallue Nuevo")))
 dev.off()
 ###Cloud forest
-png(filename = "Figure6.png", width = 8, height = 6, units = "in", res = 300)
+png(filename = "Figure6.png", width = 8, height = 8, units = "in", res = 300)
 paForestLossTotaledWith2000Area %>%
   filter(landCoverCode == 4, cumPerc < 0.95) %>%
   gather(key = "lossSource", value = "sqKm", totalUnburnedLoss, totalBurned, stillForested)%>%
   #filter(lossSource != "stillForested") %>%
   ggplot(., aes(x = reorder(NOMBRE,desc(cumPerc)), y = sqKm)) + geom_bar(aes(fill = lossSource), stat = "identity", position = position_stack()) + 
-  theme(axis.text.x = element_text(angle = 340), axis.title.y = element_text(size = 18),
-        axis.title.x = element_text(size = 18)) + xlab("Protected area") + ylab("Area (sq.km) of protected cloud forest") + 
+  theme(axis.text.x = element_text(angle = 340, size = 14), axis.title.y = element_text(size = 18),
+        axis.title.x = element_text(size = 18)) + 
+  labs(x = "Protected area", y = expression(paste("Area (", "km"^"2",")", " of protected cloud forest"))) + 
   scale_fill_manual(name = "Status of forest, 2016",
                     labels = c("Intact", "Deforested, fire", "Deforested, other cause"),
                     values = c("#999999", "#E69F00", "#56B4E9")) + scale_x_discrete(labels = rev(c("Valle Nuevo","Armando Bermúdez",
@@ -3094,14 +3121,15 @@ paForestLossTotaledWith2000Area %>%
                                                                                              "Alto Bao")))
 dev.off()
 ###Moist broadleaf
-png(filename = "Figure7.png", width = 8, height = 6, units = "in", res = 300)
+png(filename = "Figure7.png", width = 8, height = 8, units = "in", res = 300)
 paForestLossTotaledWith2000Area %>%
   filter(landCoverCode == 6, cumPerc < 0.76) %>%
   gather(key = "lossSource", value = "sqKm", totalUnburnedLoss, totalBurned, stillForested)%>%
   #filter(lossSource != "stillForested") %>%
   ggplot(., aes(x = reorder(NOMBRE,desc(cumPerc)), y = sqKm)) + geom_bar(aes(fill = lossSource), stat = "identity", position = position_stack()) + 
-  theme(axis.text.x = element_text(angle = 340), axis.title.y = element_text(size = 18),
-        axis.title.x = element_text(size = 18)) + xlab("Protected area") + ylab("Area (sq.km) of protected moist broadleaf forest") + 
+  theme(axis.text.x = element_text(angle = 340, size = 14), axis.title.y = element_text(size = 18),
+        axis.title.x = element_text(size = 18)) + 
+  labs(x = "Protected area", y = expression(paste("Area (", "km"^"2",")", " of protected moist broadleaf forest"))) + 
   scale_fill_manual(name = "Status of forest, 2016",
                     labels = c("Intact", "Deforested, fire", "Deforested, other cause"),
                     values = c("#999999", "#E69F00", "#56B4E9")) + scale_x_discrete(labels = rev(c("Los Haitises","La Humeadora",
@@ -3112,28 +3140,30 @@ paForestLossTotaledWith2000Area %>%
                                                                                            "Caamaño","Hatillo")))
 dev.off()
 ###Semi-moist broadleaf
-png(filename = "Figure8.png", width = 8, height = 6, units = "in", res = 300)
+png(filename = "Figure8.png", width = 8, height = 8, units = "in", res = 300)
 paForestLossTotaledWith2000Area %>%
   filter(landCoverCode == 8, cumPerc < 0.76) %>%
   gather(key = "lossSource", value = "sqKm", totalUnburnedLoss, totalBurned, stillForested)%>%
   #filter(lossSource != "stillForested") %>%
   ggplot(., aes(x = reorder(NOMBRE,desc(cumPerc)), y = sqKm)) + geom_bar(aes(fill = lossSource), stat = "identity", position = position_stack()) + 
-  theme(axis.text.x = element_text(angle = 340), axis.title.y = element_text(size = 18),
-        axis.title.x = element_text(size = 18)) + xlab("Protected area") + ylab("Area (sq.km) of protected semi-moist broadleaf forest") + 
+  theme(axis.text.x = element_text(angle = 340, size = 14), axis.title.y = element_text(size = 18),
+        axis.title.x = element_text(size = 18)) + 
+  labs(x = "Protected area", y = expression(paste("Area (", "km"^"2",")", " of protected semi-moist broadleaf forest"))) + 
   scale_fill_manual(name = "Status of forest, 2016",
                     labels = c("Intact", "Deforested, fire", "Deforested, other cause"),
                     values = c("#999999", "#E69F00", "#56B4E9")) + scale_x_discrete(labels = rev(c("Cotubanamá", "Bahoruco", "Jaragua",
                                                                                              "Punta Espada")))
 dev.off()
 ###Dry forest
-png(filename = "Figure9.png", width = 8, height = 6, units = "in", res = 300)
+png(filename = "Figure9.png", width = 8, height = 8, units = "in", res = 300)
 paForestLossTotaledWith2000Area %>%
   filter(landCoverCode == 9, cumPerc < 0.76) %>%
   gather(key = "lossSource", value = "sqKm", totalUnburnedLoss, totalBurned, stillForested)%>%
   #filter(lossSource != "stillForested") %>%
   ggplot(., aes(x = reorder(NOMBRE,desc(cumPerc)), y = sqKm)) + geom_bar(aes(fill = lossSource), stat = "identity", position = position_stack()) + 
-  theme(axis.text.x = element_text(angle = 340), axis.title.y = element_text(size = 18),
-        axis.title.x = element_text(size = 18)) + xlab("Protected area") + ylab("Area (sq.km) of protected dry forest") + 
+  theme(axis.text.x = element_text(angle = 340, size = 14), axis.title.y = element_text(size = 18),
+        axis.title.x = element_text(size = 18)) + 
+  labs(x = "Protected area", y = expression(paste("Area (", "km"^"2",")", " of protected dry forest"))) + 
   scale_fill_manual(name = "Status of forest, 2016",
                       labels = c("Intact", "Deforested, fire", "Deforested, other cause"),
                       values = c("#999999", "#E69F00", "#56B4E9")) + scale_x_discrete(labels = rev(c("Jaragua", "Bahoruco",
