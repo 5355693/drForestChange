@@ -2785,8 +2785,8 @@ gather(., key = "lossType", value = "sqKm", sqKm, sqKmNoFire) %>%
   xlab("Year") + ylab("Area covered (sq. km)") + scale_color_discrete(name = "Source of forest loss",
                          labels = c("All sources","All sources except fire"))
 ##Annual loss
-png(filename = "figureAnnualLoss.png", width = 8, height = 8, units = "in",
-    res = 300)  
+tiff(filename = "figureAnnualLoss.tiff", width = 6, height = 6, units = "in",
+    res = 300, compression = "lzw")  
 forestAreaAnnual %>%
   filter(landCoverName == "Dense conifer forest"|landCoverName == "Open conifer forest"|landCoverName == "Wet broadleaf forest"|
            landCoverName == "Moist broadleaf forest"|landCoverName == "Semi-moist broadleaf forest"|landCoverName == "Dry forest")%>%
@@ -2807,8 +2807,8 @@ forestAreaAnnual %>%
 dev.off()
 
 ##Plotting it as forest lost, instead
-png(filename = "Figure3.png", width = 8, height = 8, units = "in",
-    res = 300)
+tiff(filename = "Figure2.tiff", width = 8, height = 6, units = "in",
+    res = 300, compression = "lzw")
 forestAreaAnnual %>%
   group_by(landCoverCode) %>%
   mutate(year2000Extent = max(sqKm)) %>%
@@ -2864,7 +2864,7 @@ dev.off()
 forestChange$sqKmBurnedInPA <- c(73.12443770213224,36.824172388283,14.99157645569296,9.78010494840113,1.341022439299461,1.367332007870425,0.00820571890079274,0.10966606166848572,0,4.279997609192625,1.306993234085151,0.006794183349609374,0.004229908081054687,0.0008462817993164063,1.8013864541625972,0.0033859031982421874,0.08476447845458986,0.7949086199340815,0.01841126232359643,0,0.011781539548387714
                     ,0.0016922805175781249,0.04143538415527343,1.2763473043591058,9.952640274183805,0.016871465942382816,0.0008490761108398437)
 
-tiff(filename = "/Users/johnlloyd/Documents/GitHub/drForestChange/Figure2.tiff", width = 6, height = 8, units = "in", res = 300)
+tiff(filename = "/Users/johnlloyd/Documents/GitHub/drForestChange/Fig3.tiff", width = 6, height = 8, units = "in", res = 300)
 panelA <- paAreaLC12000 %>%
   filter(cumPerc < 0.76) %>%
   ggplot(., aes(x = reorder(NOMBRE,cumPerc), y = cumPerc)) + geom_col() + scale_y_continuous(breaks = c(0,0.25,0.5,0.75), limits = c(0,0.8)) + 
@@ -3075,7 +3075,7 @@ paForestLostAllYearsTotaled <- paForestLostAllYears %>%
 
 ##Figures of loss v. intact for each forest type by top protected areas (those containing 75% of all protected forest of that type)
 ###Dense conifer
-png(filename = "Figure4.png", width = 8, height = 8, units = "in", res = 300)
+tiff(filename = "Fig3.tiff", width = 8, height = 8, units = "in", res = 300)
 paForestLossTotaledWith2000Area %>%
   filter(landCoverCode == 1, cumPerc < 0.76) %>%
   gather(key = "lossSource", value = "sqKm", totalUnburnedLoss, totalBurned, stillForested)%>%
@@ -3090,7 +3090,7 @@ paForestLossTotaledWith2000Area %>%
 
 dev.off()
 ###Open conifer
-png(filename = "Figure5.png", width = 8, height = 8, units = "in", res = 300)
+tiff(filename = "Fig4.tiff", width = 8, height = 8, units = "in", res = 300)
 paForestLossTotaledWith2000Area %>%
   filter(landCoverCode == 2, cumPerc < 0.76) %>%
   gather(key = "lossSource", value = "sqKm", totalUnburnedLoss, totalBurned, stillForested)%>%
@@ -3104,7 +3104,7 @@ paForestLossTotaledWith2000Area %>%
                     values = c("#999999", "#E69F00", "#56B4E9")) + scale_x_discrete(labels = rev(c("Bahoruco","Carmen Ramírez","Vallue Nuevo")))
 dev.off()
 ###Cloud forest
-png(filename = "Figure6.png", width = 8, height = 8, units = "in", res = 300)
+tiff(filename = "Fig5.tiff", width = 8, height = 8, units = "in", res = 300)
 paForestLossTotaledWith2000Area %>%
   filter(landCoverCode == 4, cumPerc < 0.95) %>%
   gather(key = "lossSource", value = "sqKm", totalUnburnedLoss, totalBurned, stillForested)%>%
@@ -3121,7 +3121,7 @@ paForestLossTotaledWith2000Area %>%
                                                                                              "Alto Bao")))
 dev.off()
 ###Moist broadleaf
-png(filename = "Figure7.png", width = 8, height = 8, units = "in", res = 300)
+tiff(filename = "Fig6.tiff", width = 8, height = 8, units = "in", res = 300)
 paForestLossTotaledWith2000Area %>%
   filter(landCoverCode == 6, cumPerc < 0.76) %>%
   gather(key = "lossSource", value = "sqKm", totalUnburnedLoss, totalBurned, stillForested)%>%
@@ -3140,7 +3140,7 @@ paForestLossTotaledWith2000Area %>%
                                                                                            "Caamaño","Hatillo")))
 dev.off()
 ###Semi-moist broadleaf
-png(filename = "Figure8.png", width = 8, height = 8, units = "in", res = 300)
+tiff(filename = "Fig7.tiff", width = 8, height = 8, units = "in", res = 300)
 paForestLossTotaledWith2000Area %>%
   filter(landCoverCode == 8, cumPerc < 0.76) %>%
   gather(key = "lossSource", value = "sqKm", totalUnburnedLoss, totalBurned, stillForested)%>%
@@ -3155,7 +3155,7 @@ paForestLossTotaledWith2000Area %>%
                                                                                              "Punta Espada")))
 dev.off()
 ###Dry forest
-png(filename = "Figure9.png", width = 8, height = 8, units = "in", res = 300)
+tiff(filename = "Fig8.tiff", width = 8, height = 8, units = "in", res = 300)
 paForestLossTotaledWith2000Area %>%
   filter(landCoverCode == 9, cumPerc < 0.76) %>%
   gather(key = "lossSource", value = "sqKm", totalUnburnedLoss, totalBurned, stillForested)%>%
